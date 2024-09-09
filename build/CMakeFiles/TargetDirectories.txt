@@ -1,0 +1,13 @@
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/shared_lib.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/client.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/server.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/shared_test.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/client_test.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/server_test.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/test.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/edit_cache.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/rebuild_cache.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/list_install_components.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/install.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/install/local.dir
+/Users/ikerfueyo/distributed-chat-app/build/CMakeFiles/install/strip.dir

@@ -1,0 +1,24 @@
+# Dockerfile.server
+FROM ubuntu:20.04
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    cmake \
+    git
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the project files
+COPY . /app
+
+# Build the server
+RUN mkdir build && cd build && cmake .. && make server
+
+# Expose the server port
+EXPOSE 12345
+
+# Set the command to run the server
+CMD ["./server", "/app/config/server_config.json"]

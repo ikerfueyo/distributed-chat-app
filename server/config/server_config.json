@@ -1,0 +1,6 @@
+{
+    "server_port": 12345,
+    "max_clients": 100,
+    "rsa_private_key_file": "server-secret-key",
+    "logging_level": "INFO"
+}

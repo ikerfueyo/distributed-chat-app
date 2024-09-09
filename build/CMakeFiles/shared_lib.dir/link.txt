@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libshared_lib.a CMakeFiles/shared_lib.dir/shared/Message.cpp.o CMakeFiles/shared_lib.dir/shared/Encryption.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libshared_lib.a

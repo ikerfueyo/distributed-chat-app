@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    image: chatapp_server:latest
+    container_name: chat_server
+    ports:
+      - "12345:12345"
+    networks:
+      - chatnet
+    volumes:
+      - ./logs/server:/app/logs
+    environment:
+      - SERVER_CONFIG=/app/server/config/server_config.json
+    command: ["./server", "/app/server/config/server_config.json"]
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    image: chatapp_client:latest
+    networks:
+      - chatnet
+    depends_on:
+      - server
+    environment:
+      - CLIENT_CONFIG=/app/client/config/client_config.json
+    volumes:
+      - ./logs/client:/app/logs
+    command: ["./client", "chat_server", "12345"]
+    deploy:
+      replicas: 2
+
+networks:
+  chatnet:
+    driver: bridge
